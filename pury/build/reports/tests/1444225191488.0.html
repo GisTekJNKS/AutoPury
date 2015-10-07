@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="_csrf" name="csrf-param" />
+    <meta content="RlU0eGNndzYMDAUQCB5DfAkXQEs7US5dDx5YKxESAnASOX4QKSgSbw==" name="csrf-token" />
+    <title>Skyportal</title>
+    <link href="/files/uploads/cat-pin.png" type="image/png" rel="icon" />
+    <link rel="stylesheet" href="/sass/scheme-grey.css" />
+<link rel="stylesheet" href="/assets/d37d2a36/css/bootstrap.css" />
+<link rel="stylesheet" href="/assets/debc4d83/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/vendor/sdashboard/sDashboard.css" />
+<link rel="stylesheet" href="/sass/site.css" />
+<script src="/assets/86a3f74b/jquery.js"></script>
+<script src="/assets/d37d2a36/js/bootstrap.js"></script>
+<script src="/assets/debc4d83/jquery-ui.js"></script>
+<script src="/vendor/sdashboard/jquery.dataTables.js"></script>
+<script src="/vendor/sdashboard/flotr2.js"></script>
+<script src="/vendor/sdashboard/jquery-sDashboard.js"></script>
+<script src="/js/sdashboard-init.js"></script>
+<script src="/js/framework.js"></script>    </head>
+<body>
+
+    
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+    <div class="navbar-header">
+        <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="/framework" class="navbar-brand">Skyportal</a>
+    </div>
+
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+                                                <li><a href="/backup">Backup</a></li>
+                                    </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    My apps<span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                                                                        <li><a href="/backup">Backup</a></li>
+                                                            </ul>
+            </li>
+            <li class="dropdown">
+                <a aria-expanded="false" id="dropdownMenu1" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    Settings<span class="caret"></span></a>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                                                                                                                                    <li><a href="/settings/profile">My profile</a></li>
+                                                                                                                <li class="dropdown">
+                                    <a aria-expanded="false" id="dropdownMenu2" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        Create                                        <span class="caret"></span>
+                                    </a>
+                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-left">
+                                                                                    <li><a href="/settings/create?entity=1">user</a></li>
+                                                                                    <li><a href="/settings/create?entity=4">department</a></li>
+                                                                                    <li><a href="/settings/create?entity=9">n</a></li>
+                                                                                    <li><a href="/settings/create?entity=10">Entity</a></li>
+                                                                                    <li><a href="/settings/create?entity=11">123</a></li>
+                                                                            </ul>
+                                </li>
+                                                                                                                                            <li class="dropdown">
+                                    <a aria-expanded="false" id="dropdownMenu2" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        Edit                                        <span class="caret"></span>
+                                    </a>
+                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-left">
+                                                                                    <li><a href="/settings/edit?entity=1">user</a></li>
+                                                                                    <li><a href="/settings/edit?entity=4">department</a></li>
+                                                                                    <li><a href="/settings/edit?entity=9">n</a></li>
+                                                                                    <li><a href="/settings/edit?entity=10">Entity</a></li>
+                                                                                    <li><a href="/settings/edit?entity=11">123</a></li>
+                                                                            </ul>
+                                </li>
+                                                                                                                                                                        <li><a href="/settings/object-list">Object editor</a></li>
+                                                                                                                                            <li><a href="/settings/permissions">Permissions</a></li>
+                                                                                                                                            <li><a href="/settings/promoted-apps">Promoted apps</a></li>
+                                                                                                                                            <li><a href="/settings/info-popup">Informational popup</a></li>
+                                                                                                                                            <li><a href="/settings/info-content">Informational content</a></li>
+                                                                                                                                            <li><a href="/settings/change-log">Changes log</a></li>
+                                                                                                                                            <li><a href="/settings/global-settings">Global settings</a></li>
+                                                                                                                                            <li><a href="/site/logout">Log out</a></li>
+                                                                                        </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    </nav>
+    <!--<script src="js/common.js"></script>-->
+            
+    <div class="heading">
+        <div class="container-fluid">
+            <div data-href="/settings/profile/set-time-zone-user" id="date-change-log" class="row">
+                            </div>
+        </div>
+    </div>
+    </header>
+
+<div class="content">
+    
+<!--content-->
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <ul data-href="/framework/dashboard" id="myDashboard" class="sDashboard ui-sortable"><li id="Widget2"><div class="sDashboardWidget"><div class="sDashboardWidgetHeader sDashboard-clearfix ui-sortable-handle">Growth</div><div class="sDashboardWidgetContent">Some Random Content</div></div></li><li id="Widget4"><div class="sDashboardWidget"><div class="sDashboardWidgetHeader sDashboard-clearfix ui-sortable-handle">Activity</div><div class="sDashboardWidgetContent">Some Random Content</div></div></li><li id="Widget6"><div class="sDashboardWidget"><div class="sDashboardWidgetHeader sDashboard-clearfix ui-sortable-handle">Growth</div><div class="sDashboardWidgetContent">Some Random Content</div></div></li><li id="Widget3"><div class="sDashboardWidget"><div class="sDashboardWidgetHeader sDashboard-clearfix ui-sortable-handle">Activity</div><div class="sDashboardWidgetContent">Some Random Content</div></div></li><li id="Widget5"><div class="sDashboardWidget"><div class="sDashboardWidgetHeader sDashboard-clearfix ui-sortable-handle">Status</div><div class="sDashboardWidgetContent">Some Random Content</div></div></li><li id="Widget5"><div class="sDashboardWidget"><div class="sDashboardWidgetHeader sDashboard-clearfix ui-sortable-handle">Status</div><div class="sDashboardWidgetContent">Some Random Content</div></div></li></ul>
+</div>
+
+<script>
+    window['dashboards'] = "[{\"widgetTitle\":\"Growth\",\"widgetId\":\"Widget2\",\"widgetContent\":\"Some Random Content\"},{\"widgetTitle\":\"Activity\",\"widgetId\":\"Widget4\",\"widgetContent\":\"Some Random Content\"},{\"widgetTitle\":\"Growth\",\"widgetId\":\"Widget6\",\"widgetContent\":\"Some Random Content\"},{\"widgetTitle\":\"Activity\",\"widgetId\":\"Widget3\",\"widgetContent\":\"Some Random Content\"},{\"widgetTitle\":\"Status\",\"widgetId\":\"Widget5\",\"widgetContent\":\"Some Random Content\"},{\"widgetTitle\":\"Status\",\"widgetId\":\"Widget5\",\"widgetContent\":\"Some Random Content\"}]"</script></div>
+<div class="footer">© Purity IT AS 2015</div>
+
+
+
+
+<div class="sDashboard-overlay" style="height: 657px; display: none;"></div></body></html>
