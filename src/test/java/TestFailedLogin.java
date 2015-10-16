@@ -15,7 +15,6 @@ public class TestFailedLogin {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
-        open("http://purity_test_ws.andersenlab.com/");
     }
 
     @Test
