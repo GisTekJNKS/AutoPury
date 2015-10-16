@@ -34,7 +34,7 @@ public class TestSuccessfulAuthorization {
     @Test
     public void correctLogin (){
         $("#loginform-email").clear();
-        $("#loginform-email1").sendKeys("admin@gmail.com");
+        $("#loginform-email").sendKeys("admin@gmail.com");
         $("#loginform-password").sendKeys("admin");
         $(".btn.btn-primary.sign-btn").click();
         $("h1").shouldHave(text("Dashboard"));

@@ -26,7 +26,7 @@ public class TestGoToMaven {
         open("http://mvnrepository.com/");
         $("#query").sendKeys("selenide");
         $("#query").pressEnter();
-        $(By.xpath("//a[text()='selenide']")).click();
+        $(By.xpath("//a[text()='seleni1de']")).click();
     }
 
     @AfterClass
