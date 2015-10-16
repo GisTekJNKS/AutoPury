@@ -1,4 +1,5 @@
 import com.codeborne.selenide.Configuration;
+import helper.ScreenFailures;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 /**
  * Created by John on 07.10.2015.
  */
+@Listeners(ScreenFailures.class)
 public class TestSuccessfulAuthorization {
 
 
@@ -32,7 +34,7 @@ public class TestSuccessfulAuthorization {
     @Test
     public void correctLogin (){
         $("#loginform-email").clear();
-        $("#loginform-email").sendKeys("admin@gmail.com");
+        $("#loginform-email1").sendKeys("admin@gmail.com");
         $("#loginform-password").sendKeys("admin");
         $(".btn.btn-primary.sign-btn").click();
         $("h1").shouldHave(text("Dashboard"));

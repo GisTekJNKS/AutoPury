@@ -1,4 +1,5 @@
 import com.codeborne.selenide.Configuration;
+import helper.ScreenFailures;
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
 
@@ -10,6 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 /**
  * Created by John on 06.10.2015.
  */
+@Listeners(ScreenFailures.class)
 public class TestFailedLogin {
 
     @BeforeClass
