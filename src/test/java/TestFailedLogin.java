@@ -18,14 +18,10 @@ public class TestFailedLogin {
         open("http://purity_test_ws.andersenlab.com/");
     }
 
-    @BeforeMethod
-    public void stady(){
-        open("http://purity_test_ws.andersenlab.com/");
-        $("#show-login-form-btn").click();
-    }
-
     @Test
     public void loginWithEmptyFields(){
+        open("http://purity_test_ws.andersenlab.com/");
+        $("#show-login-form-btn").click();
         $(".btn.btn-primary.sign-btn").click();
         $(By.xpath("//p[text()='Email cannot be blank.']")).shouldBe(exist).shouldBe(visible);
         $(By.xpath("//p[text()='Password cannot be blank.']")).shouldBe(exist).shouldBe(visible);
@@ -33,6 +29,8 @@ public class TestFailedLogin {
 
     @Test
     public void loginWithIncorrectPassword() {
+        open("http://purity_test_ws.andersenlab.com/");
+        $("#show-login-form-btn").click();
         $("#loginform-email").sendKeys("admin@gmail.com");
         $("#loginform-password").sendKeys("sdgsefs");
         $(".btn.btn-primary.sign-btn").click();
@@ -41,6 +39,8 @@ public class TestFailedLogin {
 
     @Test
     public void loginWithIncorrectEmail(){
+        open("http://purity_test_ws.andersenlab.com/");
+        $("#show-login-form-btn").click();
         $("#loginform-email").sendKeys("admin@@gmail.com");
         $("#loginform-password").click();
         $(By.xpath("//p[contains(text(),'Email is not a valid email address.')]")).shouldBe(exist).shouldBe(visible);
