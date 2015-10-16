@@ -15,12 +15,12 @@ public class TestFailedLogin {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
-        open("http://purityIT:HardPassword@purity_ws.andersenlab.com");
+        open("http://purity_test_ws.andersenlab.com/");
     }
 
     @BeforeMethod
     public void stady(){
-        open("http://purity_ws.andersenlab.com");
+        open("http://purity_test_ws.andersenlab.com/");
         $("#show-login-form-btn").click();
     }
 

@@ -18,7 +18,7 @@ public class TestSuccessfulAuthorization {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
-        open("http://purityIT:HardPassword@purity_ws.andersenlab.com");
+        open("http://purity_test_ws.andersenlab.com/");
 //        $("#show-login-form-btn").click();
         getWebDriver().findElement(By.id("show-login-form-btn")).click();
 
