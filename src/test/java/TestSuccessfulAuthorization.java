@@ -20,6 +20,7 @@ public class TestSuccessfulAuthorization {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
+        Configuration.startMaximized=true;
         getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         open("http://purity_test_ws.andersenlab.com/");
 //        $("#show-login-form-btn").click();

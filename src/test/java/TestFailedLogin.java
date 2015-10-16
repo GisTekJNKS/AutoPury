@@ -15,6 +15,7 @@ public class TestFailedLogin {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
+        Configuration.startMaximized=true;
     }
 
     @Test
