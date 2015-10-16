@@ -7,6 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 /**
  * Created by John on 06.10.2015.
@@ -17,7 +18,7 @@ public class TestFailedLogin {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
-        Configuration.startMaximized=true;
+        getWebDriver().manage().window().maximize();
     }
 
     @Test
