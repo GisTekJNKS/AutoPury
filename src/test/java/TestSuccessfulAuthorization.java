@@ -3,6 +3,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
+import java.util.concurrent.TimeUnit;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.close;
@@ -18,6 +20,7 @@ public class TestSuccessfulAuthorization {
     @BeforeClass
     public void ready(){
         Configuration.browser = System.getProperty("browser", "firefox");
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         open("http://purity_test_ws.andersenlab.com/");
 //        $("#show-login-form-btn").click();
         getWebDriver().findElement(By.id("show-login-form-btn")).click();
